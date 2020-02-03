@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <center>
+      <font color="green">
+      <h1> WELCOME TO THE PLANT HEALTH CENTRAL STATION </h1>
+        <h2> THIS OPEN SOURCE LINUX BASED INITIATIVE WAS FOUNDED TO KEEP YOUR PLANTS MOIST AND YOUR CAT HAPPY </h2>
+        <h3>IF YOU DON'T KNOW THE SECRET COMMAND I'M AFRAID YOU WILL NEVER FIND OUT THE MOISTURE LEVEL OF YOUR PLANTS</h3>
+      </font>
+        <center>
+
+        <img src="https://i.imgur.com/1gTKJeD.jpg" width="300" height="200">
+
+        </center>
+<input type="text" id="cmd" value="Please enter a command">
+
+</br>
+
+<button onclick="myFunction()">Try it ;)</button>
+      <script>
+
+  function myFunction() {
+
+
+  var input = document.getElementById("cmd").value;
+
+  var runtime = "run"
+
+  var result = input.localeCompare(runtime);
+
+            if(result == 0) {
+
+            window.open("cgi-bin/index.html?run","_self");
+
+            }
+            else{
+              window.alert("HAH WRONG")
+            }
+  }
+
+
+      </script>
+    </center>
+  </body>
+</html>
